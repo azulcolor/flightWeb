@@ -2,26 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 'Lexend', sans-serif;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply min-h-screen 
+}
+
+p {
+  @apply text-text text-base
+}
+
+h1 {
+  @apply font-bold text-6xl
+}
+
+/* Header */
+
+.headerContainer {
+  @apply absolute w-full h-24 bg-slate-200/50 flex justify-center items-center gap-96
+}
+
+.headerContainer nav a {
+  @apply text-gray-950 text-base hover:text-title transition-all duration-300 ease-in-out z-40
+}
+
+a {
+  @apply cursor-pointer
+}
+
+.headerContainer nav {
+  @apply flex justify-around gap-11 relative
+}
+
+/* First */	
+
+.sloganContainer {
+  @apply relative w-full h-screen flex items-center justify-center
+}
+
+.slogan {
+  @apply z-50 w-full flex items-center justify-center gap-16
+}
+
+.slogan h1 {
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 5px;
+  /* text-shadow: 1px 1px 2px, 0 0 1em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255); */
+  @apply text-6xl w-96 text-title
+}
+
+/* Second */
+
+.whatIsContainer {
+  @apply h-5/6 flex items-center justify-center px-60
+}
+
+.whyUseTitle {
+  @apply h-1/6 w-screen bg-title flex items-center justify-center
 }
