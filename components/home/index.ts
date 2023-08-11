@@ -1,6 +1,6 @@
 import First from './First'
 import Second from './Second'
 import Third from './Third'
-import WhyUse from './WhyUse'
+import Fourth from './Fourth'
 
-export { First, Second, Third, WhyUse }
+export { First, Second, Third, Fourth }

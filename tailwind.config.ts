@@ -15,6 +15,7 @@ const config: Config = {
         title: '#0098D5',
         text: '#6E7881',
         background: '#F5F8FA',
+        secondary: '#018E68',
       },
     },
   },

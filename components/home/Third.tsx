@@ -1,4 +1,4 @@
-import { WhyUse } from '.'
+import { WhyUse } from './components'
 import { whyUse } from '@/utils/constants'
 
 export default function Third() {
