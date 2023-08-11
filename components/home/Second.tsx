@@ -4,7 +4,7 @@ import { whatIs, whyUseTitle } from '@/utils/constants'
 
 export default function Second() {
   return (
-    <div className='w-screen h-screen'>
+    <div className='w-screen h-screen' id='secondSection'>
       <div className='whatIsContainer'>
         <div className='mr-12'>
           <h1 className='text-title mb-4'>{whatIs.title}</h1>
