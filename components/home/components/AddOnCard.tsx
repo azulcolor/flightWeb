@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function AddOnCard({ title, text, image }: IInfo) {
   return (
-    <div className='flex flex-col lg:grid lg:grid-cols-6 bg-blue-50 lg:w-3/4 overflow-hidden'>
+    <div className='flex flex-col lg:grid lg:grid-cols-6 lg:w-3/4 overflow-hidden'>
       <div className='w-full h-auto lg:col-span-2'>
         <Image
           className='object-cover h-60 lg:h-72 w-full lg:w-80 transform hover:scale-110 transition-transform'
