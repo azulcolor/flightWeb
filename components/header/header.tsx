@@ -9,7 +9,7 @@ export default function Header() {
         <Link href='/'>Inicio</Link>
         <Link href='/'>Miembros</Link>
         <Link href='/'>Populares</Link>
-        <Link href='/'>Acerda de</Link>
+        <Link href='/'>Acerca de</Link>
       </nav>
     </header>
   )

@@ -2,7 +2,7 @@ import { IInfo } from '@/types/home'
 
 export const whatIs: IInfo = {
   title: 'Qué es FLIGHT ABSORBER?',
-  text: 'Flight Absorber es una unidad de negocio, la cual tiene por objeto, proporcionarles a los miembros de las membresías vacacionales, un certificado que pueden utilizar con la finalidad de recuperar el costo de sus vuelos siempre y cuando los vuelos sea por motivo de uso de su membresíavacacional.',
+  text: 'Flight Absorber es una unidad de negocio, la cual tiene por objeto, proporcionarles a los miembros de las membresías vacacionales, un certificado que pueden utilizar con la finalidad de recuperar el costo de sus vuelos siempre y cuando los vuelos sea por motivo de uso de su membresía vacacional.',
 }
 
 export const whyUseTitle = '¿Por qué usar FLIGHT ABSORBER?'

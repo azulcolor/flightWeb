@@ -18,17 +18,17 @@ body {
 }
 
 p {
-  @apply text-text text-base
+  @apply text-text text-sm lg:text-base
 }
 
 h1 {
-  @apply font-bold text-6xl
+  @apply font-bold lg:text-6xl text-5xl
 }
 
 /* Header */
 
 .headerContainer {
-  @apply w-full h-24 bg-background flex justify-center items-center gap-96
+  @apply w-full h-16 lg:h-24 bg-background flex justify-center items-center lg:gap-96 gap-1
 }
 
 .headerContainer nav a {
@@ -46,7 +46,7 @@ a {
 /* First */	
 
 .sloganContainer {
-  @apply h-[92vh] w-1/3 flex items-center justify-center bg-gradient-to-b from-title to-blue-600
+  @apply h-[94vh] lg:h-[92vh] lg:w-1/3 w-screen flex items-center justify-center bg-gradient-to-b from-title to-blue-600
 }
 
 .slogan {
@@ -57,21 +57,26 @@ a {
   font-family: 'Anton', sans-serif;
   letter-spacing: 5px;
   /* text-shadow: 1px 1px 2px, 0 0 1em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255); */
-  @apply text-6xl text-orange-300 text-center
+  @apply text-5xl lg:text-6xl text-orange-300 text-center
 }
 
 .slogan h2 {
   font-family: 'Anton', sans-serif;
   letter-spacing: 3px;
-  @apply text-5xl text-white text-center
+  @apply text-4xl lg:text-5xl text-white text-center
 }
 
 /* Second */
 
 .whatIsContainer {
-  @apply h-5/6 flex items-center justify-center px-60
+  @apply h-auto lg:h-5/6 flex flex-col items-center px-5 py-20 lg:flex-row lg:items-center lg:justify-center lg:px-60 lg:py-0
+}
+
+.whatIsTitle{
+  @apply text-title mb-6 text-center lg:text-left lg:mb-4
 }
 
 .whyUseTitle {
-  @apply h-1/6 w-screen bg-title flex items-center justify-center
+  @apply lg:h-1/6 h-auto py-8 w-screen bg-title flex items-center justify-center text-center
 }
+
