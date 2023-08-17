@@ -7,7 +7,7 @@ export default function AddOnCard({ title, text, image }: IInfo) {
       <div className='w-full h-auto lg:col-span-2'>
         <Image
           className='object-cover h-60 lg:h-72 w-full lg:w-80 transform hover:scale-110 transition-transform'
-          src={`/images/${image}.jpg`}
+          src={`/images/resources/${image}.jpg`}
           alt={title}
           width={1000}
           height={1000}

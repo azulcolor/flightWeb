@@ -28,11 +28,19 @@ h1 {
 /* Header */
 
 .headerContainer {
-  @apply w-full h-16 lg:h-24 bg-background flex justify-center items-center lg:gap-96 gap-1
+  @apply w-full h-16 lg:h-24 bg-background flex lg:justify-around justify-between px-6 items-center lg:gap-96 gap-1
 }
 
 .headerContainer nav a {
-  @apply text-gray-950 text-base hover:text-title transition-all duration-300 ease-in-out z-40
+  @apply hidden lg:block text-gray-700 text-base hover:text-title transition-all duration-300 ease-in-out z-40
+}
+
+.menu__mobile {
+  @apply flex-col w-40 h-8 bg-background absolute z-10 right-5
+}
+
+.menu__mobile a, button {
+  @apply py-2.5 pl-2.5 bg-background
 }
 
 a {
@@ -41,6 +49,14 @@ a {
 
 .headerContainer nav {
   @apply flex justify-around gap-11 relative
+}
+
+.hamburguer__menu {
+  @apply flex flex-col items-end gap-2 lg:hidden
+}
+
+.hamburguer__line {
+  @apply h-0.5 bg-title
 }
 
 /* First */	
@@ -56,7 +72,6 @@ a {
 .slogan h1 {
   font-family: 'Anton', sans-serif;
   letter-spacing: 5px;
-  /* text-shadow: 1px 1px 2px, 0 0 1em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255); */
   @apply text-5xl lg:text-6xl text-orange-300 text-center
 }
 

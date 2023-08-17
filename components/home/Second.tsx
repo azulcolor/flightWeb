@@ -10,7 +10,7 @@ export default function Second() {
           <h1 className='whatIsTitle'>{whatIs.title}</h1>
           <p className='text-center lg:text-left'>{whatIs.text}</p>
         </div>
-        <Image src={'/images/hotel.jpg'} alt='flight' width={400} height={400} />
+        <Image src={'/images/resources/hotel.jpg'} alt='flight' width={400} height={400} />
       </div>
       <div className='whyUseTitle'>
         <h1 className='text-background'>{whyUseTitle}</h1>
