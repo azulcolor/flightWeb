@@ -4,7 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import '../styles/scroll.css';
+@import '../styles/index.css';
 
 * {
   margin: 0;
@@ -23,40 +23,6 @@ p {
 
 h1 {
   @apply font-bold lg:text-6xl text-5xl
-}
-
-/* Header */
-
-.headerContainer {
-  @apply w-full h-16 lg:h-24 bg-background flex lg:justify-around justify-between px-6 items-center lg:gap-96 gap-1
-}
-
-.headerContainer nav a {
-  @apply hidden lg:block text-gray-700 text-base hover:text-title transition-all duration-300 ease-in-out z-40
-}
-
-.menu__mobile {
-  @apply flex-col w-40 h-8 bg-background absolute z-10 right-5
-}
-
-.menu__mobile a, button {
-  @apply py-2.5 pl-2.5 bg-background
-}
-
-a {
-  @apply cursor-pointer
-}
-
-.headerContainer nav {
-  @apply flex justify-around gap-11 relative
-}
-
-.hamburguer__menu {
-  @apply flex flex-col items-end gap-2 lg:hidden
-}
-
-.hamburguer__line {
-  @apply h-0.5 bg-title
 }
 
 /* First */	
